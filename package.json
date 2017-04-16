@@ -1,0 +1,19 @@
+{
+  "name": "basicv",
+  "version": "0.1.0",
+  "description": "basic cv using jade and sass",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donttellmywife/basicCV.git"
+  },
+  "author": "Vladimir Puchkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/donttellmywife/basicCV/issues"
+  },
+  "homepage": "https://github.com/donttellmywife/basicCV#readme"
+}
