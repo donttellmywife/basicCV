@@ -2,14 +2,14 @@
   "name": "basicv",
   "version": "0.1.0",
   "description": "basic cv using jade and sass",
-  "main": "dest/index.html",
+  "main": "dist/index.html",
   "scripts": {
     "env": "env",
     "test": "echo \"Error: no test specified\" && exit 1",
     "style": "node-sass --include-path scss ./src/css/main.scss ./dist/css/main.css",
     "markup": "pug src --out ./dist",
     "build": "npm run markup & npm run style",
-    "clean": "rm -rf dest"
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "",
   "devDependencies": {
     "node-sass": "4.5.2",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "pug-cli": "1.0.0-alpha6"
   }
 }
