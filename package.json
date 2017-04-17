@@ -2,10 +2,14 @@
   "name": "basicv",
   "version": "0.1.0",
   "description": "basic cv using jade and sass",
-  "main": "src/app.js",
+  "main": "dest/index.html",
   "scripts": {
+    "env": "env",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "node-sass --include-path scss src/css/main.scss dest/css/main.css"
+    "style": "node-sass --include-path scss ./src/css/main.scss ./dist/css/main.css",
+    "markup": "pug src --out ./dist",
+    "build": "npm run markup & npm run style",
+    "clean": "rm -rf dest"
   },
   "repository": {
     "type": "git",
@@ -14,11 +18,11 @@
   "author": "Vladimir Puchkov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/donttellmywife/basicCV/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/donttellmywife/basicCV#readme",
+  "homepage": "",
   "devDependencies": {
-    "jade": "1.11.0",
-    "node-sass": "4.5.2"
+    "node-sass": "4.5.2",
+    "pug": "2.0.0-beta11"
   }
 }
